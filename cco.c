@@ -43,7 +43,7 @@ int main(int argc, char *argv[]) {
 			printf("Design side plane: %s", apartment.face);
 	}
 
-	strcat(argv[1], ".sco")
+	strcat(argv[1], ".sco");
 	output_file = fopen(argv[1], "w");
 	bytes = fwrite(&apartment, sizeof(apartment), 1, output_file);
 	fclose(output_file);
